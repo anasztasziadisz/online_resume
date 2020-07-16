@@ -1,0 +1,115 @@
+/*CSS Reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*az elemek magasságába és szélességébe így a padding és a border is beletartozik, nem csupán a tartalom)*/
+    font-size: 100%;
+}
+
+.profile-card {
+	background-color: hsla(0, 0%, 100%, .5);
+    border-radius: 14px;
+    box-shadow: hsla(0, 0%, 0%, .8) 10px 10px 80px;
+	border: 1px solid;
+	border-color: #666;
+}
+
+.green {
+	background-color: lightgreen;
+}
+
+.pink {
+	background-color: #FFC0CB;
+}
+
+.profile-card {
+    width: 480px;
+  /*Ha az ablak mérete kisebb lesz, akkor a profile-card konténer szélessége, két oldaláról lejön -5 -5 px */ 
+    max-width: calc(100vw - 10px);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('greece.jpg') no-repeat center center fixed;
+    background-size: cover; /*A background-size: cover sor azt mondja a böngészőnek, hogy mindig
+    méretezze át úgy a háttérképet, hogy az lefedje a teljes aktuális hátteret.*/
+	
+    /*background-image: url('http://i.imgur.com/9kh3G8L.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;*/
+}
+
+ul {
+	list-style-type: none;	
+}
+
+li {
+    display: inline;
+    margin-right: 1%;
+}
+
+.head, .links {
+    text-align: center;
+}
+
+.head, .content {
+    width: 90%;
+    margin: 0 auto;
+}
+
+img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.profile-image {
+    margin-top: -60px;
+}
+
+.head, .about {
+    margin-bottom: 5%;
+}
+
+.content {
+    padding: 5% 10%;
+    border-top: 1px solid hsla(0, 0%, 30%, .8);
+}
+
+img {
+    padding: 2px;
+    background-color: #666;
+    transition: all 1s ease-in-out;
+    filter: grayscale(50%);
+}
+
+img:hover {
+  transform: scale(1.1);
+  filter: grayscale(20%);
+
+}
+
+h1 {
+	font-size:20px;
+	margin-top: 3%;
+	font-weight: bold;
+}
+
+
+#job {
+	font-size:20px;
+	margin-top: 3%;
+	font-weight: normal;
+}
+
+.name-headline p {
+	margin-top: 2%;
+}
+
+a { 
+    color:grey;
+}	
